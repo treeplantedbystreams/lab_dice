@@ -1,0 +1,21 @@
+
+
+.butt{
+    
+    float:left;
+}
+
+.awesome{
+    width:150px;
+    height:150px;
+    background-color:black;
+    margin: 4px;
+    padding: 50px;
+    display:inline;
+    float:left;
+    
+     
+}
+
+boxxx.style.float: left;
+    boxxx.CSSStyleDisplay: inline;
