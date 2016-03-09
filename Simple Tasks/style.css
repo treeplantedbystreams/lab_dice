@@ -1,0 +1,20 @@
+#shalom{
+    
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    color:changeColor;
+}
+#shalom:hover{
+       background-color: green
+       
+   }
+
+#reminder{
+    font-size: 18px;
+       
+}
+.p:onclick{
+    color:changeColor;
+}
