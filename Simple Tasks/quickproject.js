@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var addButton= document.createElement('button');
+    
+    var nameButton=document.createElement('button');
+    nameButton.id="name";
+    nameButton.innerText=Name;
+    document.empty.appendChild(addButton);
+    nameButton .addEventListener('click',David)
+    
     var reminder= document.getElementById('reminder');
+    var addButton= document.createElement('button');  
     addButton.id = 'welcome';
     addButton.innerText= "welcome";
     document.body.appendChild(addButton);
