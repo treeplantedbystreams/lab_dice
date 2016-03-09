@@ -1,0 +1,41 @@
+.car {
+    background-color:red;
+    height:100px; 
+    width: 100px;
+    animation-direction: alternate, reverse, normal;
+}
+
+.motorcycle {
+    background-color: yellow;
+    height:50px;
+    width:110px;    
+   animation-direction: alternate, reverse, normal;
+}
+
+.police{
+    background-color: blue;
+    height:50px; 
+    width: 100px;
+    animation-direction: alternate, reverse, normal;
+}
+
+.tank{
+    background-color:green;
+    height:100;
+    width:200;
+    animation-direction: alternate, reverse, normal;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
