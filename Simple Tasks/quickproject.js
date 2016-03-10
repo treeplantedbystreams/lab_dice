@@ -24,33 +24,25 @@
         spanHere.appendChild(text);
         nameContainer.appendChild(spanHere);
      }
+              // 6. Create a button and a `ul` in your HTML. 
+              //In JavaScript, create an array containing the names of your friends (at least 10. 
+              //If you don't have that many, include your imaginary ones). 
+              //When the button is clicked, add each friend's name as an `li` to the `ul` on the page.
+  
+            friends.onclick = function() { //friends function
+            var friends=document.getElementById('friends'); //define friends
+            var friendsArray=["jason", "sammy", "tobey", "sarah", 'bill'];//present array
             
-            friends.onclick = function() {
-            var friends=document.getElementById('friends');    
-            var friendsArray=["jason","sammy",'tobey',"sarah",'bill'];
-            for(i = 0; i <friendsArray.length; i++) {
-            var name= friendsArray[i];
+            for(i = 0; i <friendsArray.length; i++){//array function
             
-            var listItem = document.getElementById('li');
-            var shalom = document.getElementById('shalom');
-            
-            friends.appendChild(name);
-            shalom.appendChild(friends);
+            var liPerClick=friendsArray.shift(); //define function that limits li per click
+            var listItem = document.createElement('li');//create li to append text node to
+            listItem.appendChild(document.createTextNode(liPerClick)); //create and append child(node)
+           
+            var ul= document.getElementById('ul'); //define ul
+            ul.appendChild(listItem);     
             };
         }
 ;})
    
-
-//  +    forList.onclick = function() {
-//       var forList = document.getElementById('forList');
-//  +    var theList = document.getElementById('ul');
-//  +    var friends = ['Me','Myself','JR','Betsy','Fluffy','Francis','Francois','Spirit','Cheyenne','Kiante'];
-
-//  +        for(var i = 0; i < friends.list; i++){
-//  +            var name = friends[i];
-//  +        }
-//  +        var listItem = document.createElement('li');
-//  +        listItem.appendChild(name);
-//  +        theList.appendChild(addItem);
-//  +    }
 
