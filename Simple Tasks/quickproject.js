@@ -1,22 +1,18 @@
-(document).addEventListener('DOMContentLoaded',function(){
-   
-   
-   var reminder=document.getElementById('reminder');
-   reminder.addEventListener('click',changeColor);
-   function changeColor (event){
-        var reminder=event.target;
+//Create an object and make the background turn random colors when clicked upon
+(document).addEventListener('DOMContentLoaded',function(){//DOMContentLoaded when using the dom
+   var reminder=document.getElementById('reminder');//declare the object
+   reminder.addEventListener('click',changeColor);//state the eventlistener instead of doing onclick
+   function changeColor (event){//declare the function
         var colorArray = ['#F2F3F4', '#CD9575', '#915C83','#FAEBD7','#008000','#8DB600','#FBCEB1',
-        '#00FFFF','#7FFFD4','#4B5320','#3B444B','#E9D66B','#B2BEB5', '#87A96B', '#FF9966'];
-        var index = Math.floor(Math.random() * colorArray.length);
-        reminder.style.backgroundColor = colorArray[index];
-    }
-        var pushHere=document.getElementById('pushHere');
+        '#00FFFF','#7FFFD4','#4B5320','#3B444B','#E9D66B','#B2BEB5', '#87A96B', '#FF9966'];//declare the array
+        var index = Math.floor(Math.random() * colorArray.length);//mathrandom the length of the array
+        reminder.style.backgroundColor = colorArray[index];//target.target.target.function=array[]
+   }   
         pushHere.onclick= function() {
+        var pushHere=document.getElementById('pushHere');
         var words= document.getElementById('myValue').value;
         alert(words);
     }
-        var addName=document.getElementById('addName');
-     
      addName.onclick = function() {
           var addName=document.getElementById('addName');
         var nameContainer = document.getElementById('nameContainer');
