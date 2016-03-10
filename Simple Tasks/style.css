@@ -10,6 +10,26 @@
        background-color: green
        
    }
+#divLand{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+div{
+    color:black;
+}
+
+#nameContainer{ 
+    
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
 
 #reminder{
     font-size: 18px;
@@ -17,4 +37,14 @@
 }
 .p:onclick{
     color:changeColor;
+}
+
+#empty{
+    background-color:grey;
+    color: Black
+}
+
+span{
+    float: left;
+    width:30px;
 }
