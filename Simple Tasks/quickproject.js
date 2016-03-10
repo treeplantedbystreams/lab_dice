@@ -18,6 +18,7 @@
         var addName=document.getElementById('addName');
      
      addName.onclick = function() {
+          var addName=document.getElementById('addName');
         var nameContainer = document.getElementById('nameContainer');
         var spanHere = document.createElement('spanHere');
         var text = document.createTextNode('David');
