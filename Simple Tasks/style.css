@@ -7,8 +7,8 @@
     color:changeColor;
 }
 #shalom:hover{
-       background-color: green
-       
+       background-color: green;
+       color:black;
    }
 #divLand{
     width: 200px;
@@ -48,3 +48,8 @@ span{
     float: left;
     width:30px;
 }
+ul li {
+    color:black;
+}
+
+

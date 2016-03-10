@@ -1,5 +1,6 @@
 (document).addEventListener('DOMContentLoaded',function(){
    
+   
    var reminder=document.getElementById('reminder');
    reminder.addEventListener('click',changeColor);
    function changeColor (event){
@@ -23,27 +24,28 @@
         spanHere.appendChild(text);
         nameContainer.appendChild(spanHere);
      }
-         friendList.onclick = function(){ 
-             
-            var theList=document.getElementById('ul');
-            var friends=["jason","sammy",'tobey',"sarah",'bill'];
-            for(i = 0; i <friends.list; i++);{
-            var name= friends[i];
-            }
-            var listItem = document.createElement('li');
-            listItem.appendChild(friends[i]);
-            theList.appendChild(listItem);
-            divLand.appendChild(theList);
+            
+            friends.onclick = function() {
+            var friends=document.getElementById('friends');    
+            var friendsArray=["jason","sammy",'tobey',"sarah",'bill'];
+            for(i = 0; i <friendsArray.length; i++) {
+            var name= friendsArray[i];
+            
+            var listItem = document.getElementById('li');
+            var shalom = document.getElementById('shalom');
+            
+            friends.appendChild(name);
+            shalom.appendChild(friends);
+            };
         }
-        
 ;})
    
 
-
-// var forList = document.getElementById('forList');
+//  +    forList.onclick = function() {
+//       var forList = document.getElementById('forList');
 //  +    var theList = document.getElementById('ul');
 //  +    var friends = ['Me','Myself','JR','Betsy','Fluffy','Francis','Francois','Spirit','Cheyenne','Kiante'];
-//  +    forList.onclick = function() {
+
 //  +        for(var i = 0; i < friends.list; i++){
 //  +            var name = friends[i];
 //  +        }
